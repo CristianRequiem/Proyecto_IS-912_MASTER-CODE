@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+    <title>MC - Configuración de perfil</title>
+    
+    <!-- Bootstrap 3.3.5 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- Tema -->
+    <link rel="stylesheet" href="css/AdminLTE.min.css">
+
+    <link rel="stylesheet" href="css/_all-skins.min.css">
+    <link rel="shortcut icon" href="img/1.png">
+
+    <style>
+      td {
+        text-align: left;
+      }
+
+      input {
+        border-radius: 3px;
+        width: 50%;
+      }
+
+      .margen-boton {
+        margin-top: 90px;
+      }
+    </style>
+  
+  </head>
+
+  <body class="hold-transition skin-blue sidebar-mini"
+  style="background-color:#f5f5f5;;">
+    <div class="wrapper">
+
+    <!-- Inicio de la barra de navegación-->
+    <header class="main-header" style="background-color:#2f89fc;">
+      <a href="#" class="logo" style="background-color:#2f89fc;">
+        <span class="logo-mini"><b>M</b>C</span>
+        <span class="logo-lg" style="background-color:#2f89fc;"><img src="img/1.png" alt="MC" id="logo" style="height:45px;width:150px;">
+        </span>
+      </a>
+      <nav class="navbar navbar-static-top" role="navigation"
+      style="background-color:#2f89fc;">
+        <a href="#" data-toggle="offcanvas">
+          <span class="fas fa-bars" color="white"></span>
+        </a>
+        <div class="navbar-custom-menu">
+          <ul class="nav navbar-nav">
+            <li class="dropdown user user-menu">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <span class="far fa-user" style="margin-right:7px;"></span>
+                <span class="hidden-xs">USUARIO</span>
+              </a>
+              <ul class="dropdown-menu">
+                <a href="index.html" class="btn btn-default btn-flat">Cerrar sesión</a>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- Final de la barra de navegación-->
+    
+    <!-- Barra de menú lateral -->
+    <aside class="main-sidebar" style="background-color:#40514e;">
+      <section class="sidebar">          
+        <ul class="sidebar-menu">
+          <li class="header" style="background-color:#40514e;"></li>
+          <li>
+            <a href="#" data-toggle="modal" data-target="#modal-about">
+              <i class="fas fa-info-circle"></i> <span>Acerca De...</span>
+            </a>
+          </li>
+          <li>
+            <a href="index.html">
+              <i class="fas fa-power-off"></i> <span>Cerrar Sesión</span>
+            </a>
+          </li>          
+        </ul>
+      </section>
+    </aside>
+    <!-- Fin del menú lateral-->
+
+    <!--Contenido-->
+    <div class="content-wrapper">
+      <section class="content">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="box" style="height:475px;">
+              <div class="box-header with-border">
+                <h3 class="box-title">CONFIGURAR PERFIL</h3>
+              </div>
+              <div class="box-body">
+                <div class="row">
+                  <div class="col-md-12">
+                    <!--Contenido*************** -->
+                    <div>
+                    <table class="table table-borderless">
+                      <tr>
+                        <td>Nombre:</td>
+                        <td><input type="text" name="txt-nombre" id="txt-nombre" placeholder="nombre" maxlength="50">
+                        </td>
+                        <td>Foto de perfil</td>
+                      </tr>
+                      <tr>
+                        <td>Apellido:</td>
+                        <td><input type="text" name="txt-apellido" id="txt-apellido" placeholder="apellido" maxlength="50">
+                        </td>
+                        <td rowspan="2"><img src="img/perfil_anonimo.jpg"
+                        style="height:20%; width:15%;"></td>
+                      </tr>
+                      <tr>
+                        <td>Correo:</td>
+                        <td><input type="email" name="txt-email" id="txt-email" placeholder="correo" maxlength="50">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Contraseña:</td>
+                        <td><input type="password" name="txt-password"
+                        id="txt-password" placeholder="contraseña" maxlength="50">
+                        </td>
+                        <td><button class="btn btn-success">Cambiar foto</button>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <div style="margin-left:350px;margin-right:200px;"
+                    class="margen-boton">
+                    <a href="proyectos.html"><button class="btn btn-danger"
+                    style="width:150px;">Cancelar</button></a>
+                    <a href="proyectos.html"><button class="btn btn-primary"
+                    style="width:150px;">Guardar cambios</button></a>
+                    </div>
+
+                    </div>
+                    <!--Fin Contenido*********** -->
+                  </div>
+                </div>        
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!--Fin-Contenido-->
+
+    <!-- Inicio de pantalla modal "Acerca de"-->
+    <div class="modal fade" id="modal-about" role="dialog" style="margin-top: 30px;">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">ACERCA DE</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div id="m-login">
+              <div class="row">
+                  <img id="logo" src="img/2.png"  style ="height:55px; width:85px;
+                  margin-left:200px;" alt="MC">
+              </div>
+              <br>
+              <div class="container">
+                <p>
+                  Proyecto para la clase de IS-912 - Sistemas Expertos<br>
+                  del primer periodo académico del 2019.<br>
+                  Creado por: Cristian Umanzor
+                </p>
+              </div>
+            </div>  
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fin de pantalla modal "Acerca de"-->
+
+    <!-- Pie de página -->
+    <footer class="main-footer">
+      <p align="center"><strong>MASTER CODE &copy; 2019.</strong> Derechos reservados
+      </p>
+    </footer>
+
+      
+    <!-- jQuery 2.1.4 -->
+    <!--<script src="js/jquery-3.3.1.min.js"></script>-->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/jQuery-2.1.4.min.js"></script>
+
+    <script src="js/all.min.js"></script>
+
+    <!-- popper dependencia BT -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap 3.3.5 -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="js/app.min.js"></script>
+    
+  </body>
+</html>

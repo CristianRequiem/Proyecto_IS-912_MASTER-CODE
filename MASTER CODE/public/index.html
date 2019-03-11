@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <title>Master Code</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+
+  <!--Enlace para los glyphicons de Font Awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <!--Estilo customizado-->
+  <link rel="stylesheet" href="css/estilos.css">
+
+  <!-- Icono de la pestaña-->
+  <link rel="shortcut icon" href="img/1.png">
+
+  <style>
+    #m-login, #m-signup{
+      padding: 15px;
+      background-color: white;
+      border: hidden;
+      text-align: left;
+      font-weight: bold;
+    }
+
+    input[type="email"], input[type="password"], input[type="text"] {
+      width: 300px;
+      border-radius: 5px;
+    }
+
+    .span-padding{
+      margin-right: 7px;
+    }
+
+    #logo{
+      margin-left: 41%;
+      margin-right: 45%;
+    }
+  </style>
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<!--Barra de navegacion-->    
+<nav class="navbar navbar-default navbar-fixed-top" style="background-color:#2f89fc;">
+  <div class="container">
+    <div class="navbar-header">
+      <img style="height:45px;width:75px; color:white;" src="img/1.png" alt="MC">
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ACERCA DE</a></li>
+        <li><a href="#services">LENGUAJES</a></li>
+        <li><a href="#portfolio">PORTAFOLIO</a></li>
+        <li><a href="#pricing">PLANES</a></li>
+        <li><a href="" data-toggle="modal" data-target="#modal-login">INGRESAR</a></li>
+        <li><a href="" data-toggle="modal" data-target="#modal-signup">REGISTRARSE</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--Fin de la barra de navegacion-->
+
+<!--Nombre de la empresa -->
+<div class="jumbotron text-center">
+  <h1>MASTER CODE</h1> 
+  <p>Codificando como un profesional</p> 
+  <form>
+    <div class="input-group">
+      <div class="input-group-btn">
+        <a id="botonSuscribe" class="btn btn-primary" type="submit" data-toggle="modal" data-target="#modal-login">Iniciar Sesión</a>
+      </div>
+    </div>
+  </form>
+</div>
+<!--Fin del nombre o logo-->
+
+<!-- Contenedor (Acerca de...) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>SOBRE NUESTRA COMPANÍA</h2><br>
+      <h4>Somos la mejor plataforma web para gestión y codificación colaborativa en línea.
+          <br>
+          En este sitio podrás desarrollar tus proyectos de manera gratuita, ¡o incluso podrás<br>
+          optar a nuestros planes avanzados que te otorgarán mayores beneficios!
+      </h4><br>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon fas fa-award logo"></span>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon fas fa-chart-line logo slideanim"></span>
+    </div>
+    <div class="col-sm-8">
+      <h2>NUESTROS VALORES</h2><br>
+      <h4><strong>MISIÓN:</strong> Ofrecer a los usuarios la opción de desarrollar
+      en línea el código para sus propios sitios web permitiéndoles trabajar en un entorno
+      agradable y ofreciendóles una gran experiencia de usuario.</h4><br>
+      <h4><strong>VISIÓN:</strong> Posicionarnos como la mejor plataforma de desarrollo
+      web en línea del país.</h4>
+    </div>
+  </div>
+</div>
+<!--Fin del contenedor-->
+
+<!-- Contenedor (Lenguajes disponibles) -->
+<div id="services" class="container-fluid text-center">
+  <h2>LENGUAJES</h2>
+  <h4>Podrás desarrollar tus proyectos bajos los siguientes lenguajes</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon logo-small fab fa-html5"></span>
+      <h4>HTML5</h4>
+      <p>Es la última versión de HTML. Es el lenguaje usado para estructurar
+      y presentar el contenido de las páginas web.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon logo-small fab fa-js"></span>
+      <h4>JavaScript</h4>
+      <p>Es el lenguaje de programación utilizado principalmente para crear efectos
+      atractivos y dinámicos para nuestras páginas web.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon logo-small fab fa-css3-alt"></span>
+      <h4>CSS3</h4>
+      <p>Última versión de CSS. Es el lenguaje para definir el estilo o
+      apariencia de las páginas web, escritas con HTML.</p>
+    </div>
+  </div>
+  <br>
+</div>
+<!--Fin del contenedor de lenguajes-->
+
+<!-- Contenedor (Portafolio) -->
+<div id="portfolio" class="container-fluid text-center bg-grey">
+  <h2>PORTAFOLIO</h2><br>
+  <h4>Aquí puedes ver como luce el entorno de trabajo</h4>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="img/proyectos.jpg" alt="Proyectos" width="400" height="300">
+        <p><strong>Proyectos</strong></p>
+        <p>Clic derecho>Abrir imagen en una pestaña nueva</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="img/edicion.jpg" alt="Edición" width="400" height="300">
+        <p><strong>Edición</strong></p>
+        <p>Clic derecho>Abrir imagen en una pestaña nueva</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="img/config.jpg" alt="San Francisco" width="400" height="300">
+        <p><strong>Configuración de perfil</strong></p>
+        <p>Clic derecho>Abrir imagen en una pestaña nueva</p>
+      </div>
+    </div>
+  </div><br>
+  <!--fin del contenedor de portafolio-->
+  
+  <h2>LA OPINIÓN DE NUESTROS USUARIOS</h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Comentarios del carrusel -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>"Este es un buen sitio para desarrollar software. Estoy satisfecho con los resultados"<br><span>Usuario anónimo, UNITEC</span></h4>
+      </div>
+      <div class="item">
+        <h4>"Interfaz atractiva y fácil de usar"<br><span>Usuario anónimo 2, UNAH</span></h4>
+      </div>
+      <div class="item">
+        <h4>"Este es mi nuevo sitio favorito para trabajar!"<br><span>Usuario anónimo 3, CEUTEC</span></h4>
+      </div>
+    </div>
+
+    <!-- Controles izquierda y derecha -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Siguiente</span>
+    </a>
+  </div>
+</div>
+
+<!-- Contenedor para mostrar los tipos de planes -->
+<div id="pricing" class="container-fluid">
+  <div class="text-center">
+    <h2>PLANES</h2>
+    <h4>Podrás crear la cuenta que mejor se adapte a tus necesidades</h4>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Estándar</h1>
+        </div>
+        <div class="panel-body">
+          <p>Capacidad máxima de proyectos</p>
+          <p>5</p>
+          <p><b>Podrás:</b></p>
+          <p>Crear carpetas</p>
+          <p>Crear archivos</p>
+          <p>Compartir carpetas y archivos</p>
+          <p>Crear snippets de código</p>
+        </div>
+        <div class="panel-footer">
+          <h3>GRATIS!</h3>
+          <h4>Tendrás la opción de incrementar tu cuenta</h4>
+          <button class="btn btn-lg" data-toggle="modal" data-target="#modal-signup">
+          Registrarse
+          </button>
+        </div>
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Premium</h1>
+        </div>
+        <div class="panel-body">
+          <p>Capacidad máxima de proyectos</p>
+          <p>10</p>
+          <p><b>Podrás:</b></p>
+          <p>Crear carpetas</p>
+          <p>Crear archivos</p>
+          <p>Compartir carpetas y archivos</p>
+          <p>Crear snippets de código</p>
+        </div>
+        <div class="panel-footer">
+          <h3>LPS. 250</h3>
+          <h4>Pago único</h4>
+          <button class="btn btn-lg" data-toggle="modal" data-target="#modal-signup">Registrarse
+          </button>
+        </div>
+      </div>      
+    </div>       
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Profesional</h1>
+        </div>
+        <div class="panel-body">
+          <p>Capacidad máxima de proyectos</p>
+          <p>20</p>
+          <p><b>Podrás:</b></p>
+          <p>Crear carpetas</p>
+          <p>Crear archivos</p>
+          <p>Compartir carpetas y archivos</p>
+          <p>Crear snippets de código</p>
+        </div>
+        <div class="panel-footer">
+          <h3>LPS. 400</h3>
+          <h4>Pago único</h4>
+          <button class="btn btn-lg" data-toggle="modal" data-target="#modal-signup">Registrarse
+          </button>
+        </div>
+      </div>      
+    </div>    
+  </div>
+</div>
+
+<!-- Inicio de pantalla modal "LOG IN"-->
+<div class="modal fade" id="modal-login" role="dialog" style="margin-top: 30px;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title" align="center">INICIO DE SESIÓN</h4>
+      </div>
+      <div class="modal-body">
+      <!-- Formulario de login -->
+        <div id="m-login">
+          <div>
+              <img id="logo" src="img/2.png"  style ="height:55px; width:85px;" alt="MC">
+          </div>
+          <br>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-2">
+                <span class="far fa-envelope span-padding"></span>CORREO:
+              </div>
+              <div class="col-md-2">
+                <input type="email" id="txt-email-li" name="txt-email-li"
+                placeholder="correo">
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-2">
+                <span class="fas fa-key span-padding"></span>CONTRASEÑA:
+              </div>
+              <div class="col-md-2">
+                <input type="password" id="txt-password-li" name="txt-password-li"
+                placeholder="contraseña">
+              </div>
+            </div>
+          </div>
+        </div>  
+        <!-- Fin del formulario -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar
+        </button>
+        <a href="proyectos.html">
+          <button type="button" class="btn btn-primary">Ingresar</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Fin de pantalla modal "LOG IN"-->
+
+<!-- Inicio de pantalla modal "SIGN UP"-->
+
+<div class="modal fade" id="modal-signup" role="dialog" style="margin-top: 30px;">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title" align="center">REGISTRARSE EN MC</h4>
+      </div>
+      <div class="modal-body">
+      <!-- Formulario de login -->
+        <div id="m-signup">
+          <div>
+              <img id="logo" src="img/2.png"  style ="height:55px; width:85px;" alt="MC">
+          </div>
+          <br>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-2">
+                <span class="fas fa-user-circle span-padding"></span>NOMBRE:
+              </div>
+              <div class="col-md-2">
+                <input type="text" id="txt-nombre" name="txt-nombre"
+                placeholder="nombre">
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-2">
+                <span class="fas fa-user-circle span-padding"></span>APELLIDO:
+              </div>
+              <div class="col-md-2">
+                <input type="text" id="txt-apellido" name="txt-apellido"
+                placeholder="apellido">
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-2">
+                <span class="far fa-envelope span-padding"></span>CORREO:
+              </div>
+              <div class="col-md-2">
+                <input type="email" id="txt-email-su" name="txt-email-su"
+                placeholder="correo">
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-2">
+                <span class="fas fa-key span-padding"></span>CONTRASEÑA
+              </div>
+              <div class="col-md-2">
+                <input type="password" id="txt-password-su" name="txt-password-su"
+                placeholder="contraseña">
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-2">
+                <span class="fas fa-money-check-alt span-padding"></span>TIPO PLAN:
+              </div>
+              <div class="col-md-2">
+                <select style="width:300px; height:30px;">
+                  <option name="opt-tipo-plan" value="0">
+                    SELECCIONA UN PLAN
+                  </option>
+                  <option name="opt-tipo-plan" value="1">
+                    ESTÁNDAR
+                  </option>
+                  <option name="opt-tipo-plan" value="2">
+                    PREMIUM
+                  </option>
+                  <option name="opt-tipo-plan" value="3">
+                    PROFESIONAL
+                  </option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>  
+        <!-- Fin del formulario -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar
+        </button>
+        <a href="proyectos.html">
+          <button type="button" class="btn btn-primary">Registrarse</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Fin de pantalla modal "SIGUN UP"-->
+
+<!-- Logo inferior -->
+<img src="img/3.png" class="center-block" style="width: 600px; height: 400px;">
+
+<!-- Pie de página -->
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>MASTER CODE</p>
+  <p>Derechos Reservados</p>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/controlador.js"></script>
+
+</body>
+</html>

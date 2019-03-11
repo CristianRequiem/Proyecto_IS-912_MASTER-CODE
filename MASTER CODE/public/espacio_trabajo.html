@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+    <title>MC - Espacio de Trabajo</title>
+    
+    <!-- Bootstrap 3.3.5 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- Tema -->
+    <link rel="stylesheet" href="css/AdminLTE.min.css">
+
+    <link rel="stylesheet" href="css/_all-skins.min.css">
+    <link rel="shortcut icon" href="img/1.png">
+
+    <style>
+      textarea {
+        width:90%;
+        height: 200px;
+        font-size: 12px;
+      }
+    </style>
+  
+  </head>
+
+  <body class="hold-transition skin-blue sidebar-mini"
+  style="background-color:#f5f5f5;;">
+    <div class="wrapper">
+
+    <!-- Inicio de la barra de navegación-->
+    <header class="main-header" style="background-color:#2f89fc;">
+      <a href="#" class="logo" style="background-color:#2f89fc;">
+        <span class="logo-mini"><b>M</b>C</span>
+        <span class="logo-lg" style="background-color:#2f89fc;"><img src="img/1.png" alt="MC" id="logo" style="height:45px;width:150px;">
+        </span>
+      </a>
+      <nav class="navbar navbar-static-top" role="navigation"
+      style="background-color:#2f89fc;">
+        <a href="#" data-toggle="offcanvas">
+          <span class="fas fa-bars" color="white"></span>
+        </a>
+        <div class="navbar-custom-menu">
+          <ul class="nav navbar-nav">
+            <li class="dropdown user user-menu">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <span class="far fa-user" style="margin-right:7px;"></span>
+                <span class="hidden-xs">USUARIO</span>
+              </a>
+              <ul class="dropdown-menu">
+                <a href="index.html" class="btn btn-default btn-flat">Cerrar sesión</a>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- Final de la barra de navegación-->
+    
+    <!-- Barra de menú lateral -->
+    <aside class="main-sidebar" style="background-color:#40514e;">
+      <section class="sidebar">          
+        <ul class="sidebar-menu">
+          <li class="header" style="background-color:#40514e;"></li>
+          <li>
+            <a href="#">
+              <i class="far fa-folder-open"></i> <span>Abrir Archivo</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-file-signature"></i> <span>Crear Snippet</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-download"></i> <span>Descargar Archivo</span>
+            </a>
+          </li>
+          <li>
+            <a href="proyectos.html">
+              <i class="fas fa-caret-square-left"></i> <span>Volver a Proyectos</span>
+            </a>
+          </li> 
+          <li>
+            <a href="configurar_perfil.html">
+              <i class="fas fa-cogs"></i> <span>Configurar Perfil</span>
+            </a>
+          </li> 
+          <li>
+            <a href="#" data-toggle="modal" data-target="#modal-about">
+              <i class="fas fa-info-circle"></i> <span>Acerca De...</span>
+            </a>
+          </li>
+          <li>
+            <a href="index.html">
+              <i class="fas fa-power-off"></i> <span>Cerrar Sesión</span>
+            </a>
+          </li>          
+        </ul>
+      </section>
+    </aside>
+    <!-- Fin del menú lateral-->
+
+    <!--Contenido-->
+    <div class="content-wrapper">
+      <section class="content">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="box" style="height:480px;">
+              <div class="box-header with-border">
+                <h3 class="box-title">EDICIÓN</h3>
+              </div>
+              <div class="box-body">
+
+                <div class="container">
+                  <div class="row">
+                    
+                    <div class="col-sm" style="margin-left: 9%;">
+                      <div class="row">
+                        <div class="col" align="center">HTML</div>
+                        <div class="col"><a href="" title="Guardar">
+                        <span class="fas fa-save"></span></a></div>
+                      </div>
+                      <textarea>
+                        
+                      </textarea>
+                    </div> 
+
+                    <div class="col-sm">
+                      <div class="row">
+                        <div class="col" align="center">CSS</div>
+                        <div class="col"><a href="" title="Guardar">
+                        <span class="fas fa-save"></span></a></div> 
+                      </div>
+                      <textarea>
+                        
+                      </textarea>
+                    </div>
+
+                    <div class="col-sm">
+                      <div class="row">
+                        <div class="col" align="center">JavaScript</div>
+                        <div class="col"><a href="" title="Guardar">
+                        <span class="fas fa-save"></span></a></div>
+                      </div>
+                      <textarea>
+                        
+                      </textarea>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="container">
+                  <h6 align="center">RESULTADO</h6>
+                  <div class="row">
+                    <div class="col">
+                      <iframe src="https://fontawesome.com"
+                      style="width:100%;height:100%;">
+                        
+                      </iframe>
+                    </div>
+                  </div> 
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!--Fin-Contenido-->
+
+    <!-- Inicio de pantalla modal "Acerca de"-->
+    <div class="modal fade" id="modal-about" role="dialog" style="margin-top: 30px;">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">ACERCA DE</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div id="m-login">
+              <div class="row">
+                  <img id="logo" src="img/2.png"  style ="height:55px; width:85px;
+                  margin-left:200px;" alt="MC">
+              </div>
+              <br>
+              <div class="container">
+                <p>
+                  Proyecto para la clase de IS-912 - Sistemas Expertos<br>
+                  del primer periodo académico del 2019.<br>
+                  Creado por: Cristian Umanzor
+                </p>
+              </div>
+            </div>  
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fin de pantalla modal "Acerca de"-->
+
+    <!-- Pie de página -->
+    <footer class="main-footer">
+      <p align="center"><strong>MASTER CODE &copy; 2019.</strong> Derechos reservados
+      </p>
+    </footer>
+
+      
+    <!-- jQuery 2.1.4 -->
+    <!--<script src="js/jquery-3.3.1.min.js"></script>-->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/jQuery-2.1.4.min.js"></script>
+
+    <script src="js/all.min.js"></script>
+
+    <!-- popper dependencia BT -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap 3.3.5 -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="js/app.min.js"></script>
+    
+  </body>
+</html>
