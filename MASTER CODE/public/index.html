@@ -325,8 +325,10 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar
         </button>
-        <a href="proyectos.html">
-          <button type="button" class="btn btn-primary">Ingresar</button>
+        <a -href="proyectos.html">
+          <button type="button" class="btn btn-primary" onclick="registrarLogIn()">
+          Ingresar
+          </button>
         </a>
       </div>
     </div>
@@ -357,7 +359,7 @@
                 <span class="fas fa-user-circle span-padding"></span>NOMBRE:
               </div>
               <div class="col-md-2">
-                <input type="text" id="txt-nombre" name="txt-nombre"
+                <input type="text" id="txt-nombre-su" name="txt-nombre"
                 placeholder="nombre">
               </div>
             </div>
@@ -367,7 +369,7 @@
                 <span class="fas fa-user-circle span-padding"></span>APELLIDO:
               </div>
               <div class="col-md-2">
-                <input type="text" id="txt-apellido" name="txt-apellido"
+                <input type="text" id="txt-apellido-su" name="txt-apellido"
                 placeholder="apellido">
               </div>
             </div>
@@ -420,8 +422,9 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar
         </button>
-        <a href="proyectos.html">
-          <button type="button" class="btn btn-primary">Registrarse</button>
+        <a -href="proyectos.html">
+          <button type="button" class="btn btn-primary" onclick="registrarSignUp()">Registrarse
+          </button>
         </a>
       </div>
     </div>
@@ -448,6 +451,7 @@
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/controlador.js"></script>
+<script src="js/validar_campos.js"></script>
 
 </body>
 </html>
