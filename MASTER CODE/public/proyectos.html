@@ -18,6 +18,18 @@
 
     <link rel="stylesheet" href="css/_all-skins.min.css">
     <link rel="shortcut icon" href="img/1.png">
+
+    <style>
+      input[type="email"], input[type="password"], input[type="text"] {
+        width: 250px;
+        border-radius: 5px;
+      }
+
+      select {
+        width: 250px;
+        height: 30px;
+      }
+    </style>
   
   </head>
 
@@ -60,12 +72,12 @@
         <ul class="sidebar-menu">
           <li class="header" style="background-color:#40514e;"></li>
           <li>
-            <a href="espacio_trabajo.html">
+            <a href="#" data-toggle="modal" data-target="#modalNuevoProyecto">
               <i class="fas fa-project-diagram"></i> <span>Nuevo Proyecto</span>
             </a>
           </li> 
           <li>
-            <a href="#">
+            <a href="#" data-toggle="modal" data-target="#modalNuevaCarpeta">
               <i class="fas fa-folder"></i> <span>Nueva Carpeta</span>
             </a>
           </li>
@@ -74,23 +86,29 @@
               <i class="far fa-file"></i> <span>Nuevo Archivo</span>
             </a>
             <ul class="treeview-menu">
-                <li><a href="#"><i class="fas fa-code"></i> HTML</a></li>
-                <li><a href="#"><i class="fab fa-css3-alt"></i> CSS</a></li>
-                <li><a href="#"><i class="fab fa-js-square"></i> JavaScript</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#modalNuevoArchivo">
+                  <i class="fas fa-code"></i> HTML</a>
+                </li>
+                <li><a href="#" data-toggle="modal" data-target="#modalNuevoArchivo">
+                  <i class="fab fa-css3-alt"></i> CSS</a>
+                </li>
+                <li><a href="#" data-toggle="modal" data-target="#modalNuevoArchivo">
+                  <i class="fab fa-js-square"></i> JavaScript</a>
+                </li>
               </ul>
           </li>
           <li>
-            <a href="#">
+            <a href="#" data-toggle="modal" data-target="#modalCompartirCarpeta">
               <i class="far fa-folder-open"></i> <span>Compartir Carpeta</span>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#" data-toggle="modal" data-target="#modalCompartirArchivo">
               <i class="far fa-copy"></i> <span>Compartir Archivo</span>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#" data-toggle="modal" data-target="#modalDescargarArchivo">
               <i class="fas fa-download"></i> <span>Descargar Archivo</span>
             </a>
           </li>   
@@ -177,6 +195,282 @@
       </div>
     </div>
     <!-- Fin de pantalla modal "Acerca de"-->
+
+    <!-- Pantalla modal para "Nuevo Proyecto"-->
+    <div class="modal fade" id="modalNuevoProyecto" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">NUEVO PROYECTO</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+          <div>
+              <img id="logo" src="img/2.png"  style ="height:55px; width:85px;
+              margin-left: 41%;margin-right: 45%;" alt="MC">
+          </div>
+            <table class="table table-borderless">
+              <tbody>
+                <tr>
+                  <td><label>Nombre del proyecto</label></td>
+                  <td><input type="text" name="txt-proyecto" id="txt-proyecto"
+                    maxlength="50">
+                  </td>
+                </tr>
+                <tr>
+                  <td><label>Proyectos disponibles</label></td>
+                  <td><input type="text" name="txt-disponible" id="txt-disponible"
+                  disabled></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary">Crear proyecto</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fin de pantalla modal "Nuevo Proyecto"-->
+
+    <!-- Pantalla modal para "Nueva Carpeta"-->
+    <div class="modal fade" id="modalNuevaCarpeta" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">NUEVA CARPETA</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+          <div>
+              <img id="logo" src="img/2.png"  style ="height:55px; width:85px;
+              margin-left: 41%;margin-right: 45%;" alt="MC">
+          </div>
+            <table class="table table-borderless">
+              <tbody>
+                <tr>
+                  <td><label>Nombre de carpeta</label></td>
+                  <td><input type="text" name="txt-carpeta" id="txt-carpeta"
+                    maxlength="50">
+                  </td>
+                </tr>
+                <tr>
+                  <td><label>Guardar en proyecto:</label></td>
+                  <td><select>
+                        <option value="0">Seleccione proyecto</option>
+                      </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td><label>Guardar en carpeta:</label></td>
+                  <td><select>
+                        <option value="0">Seleccione carpeta superior</option>
+                      </select>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary">Crear carpeta</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fin de pantalla modal "Nueva Carpeta"-->
+
+    <!-- Pantalla modal para "Nuevo Archivo"-->
+    <div class="modal fade" id="modalNuevoArchivo" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">NUEVO ARCHIVO</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+          <div>
+              <img id="logo" src="img/2.png"  style ="height:55px; width:85px;
+              margin-left: 41%;margin-right: 45%;" alt="MC">
+          </div>
+            <table class="table table-borderless">
+              <tbody>
+                <tr>
+                  <td><label>Nombre de archivo</label></td>
+                  <td><input type="text" name="txt-archivo" id="txt-archivo"
+                    maxlength="50">
+                  </td>
+                </tr>
+                <tr>
+                  <td><label>Tipo de archivo</label></td>
+                  <td><select>
+                        <option value="0">Seleccione archivo</option>
+                        <option value="1">HTML</option>
+                        <option value="2">CSS</option>
+                        <option value="3">JavaScript</option>
+                      </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td><label>Guardar en carpeta:</label></td>
+                  <td><select>
+                        <option value="0">Seleccione carpeta</option>
+                      </select>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary">Crear archivo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fin de pantalla modal "Nuevo Archivo"-->
+
+    <!-- Pantalla modal para "Compartir Carpeta"-->
+    <div class="modal fade" id="modalCompartirCarpeta" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">COMPARTIR CARPETA</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+          <div>
+              <img id="logo" src="img/2.png"  style ="height:55px; width:85px;
+              margin-left: 41%;margin-right: 45%;" alt="MC">
+          </div>
+            <table class="table table-borderless">
+              <tbody>
+                <tr>
+                  <td><label>Carpeta a compartir:</label></td>
+                  <td><select>
+                        <option value="0">Seleccionar carpeta</option>
+                      </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td><label>Compartir con usuario:</label></td>
+                  <td><select>
+                        <option value="0">Seleccionar usuario</option>
+                      </select>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary">Compartir carpeta</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fin de pantalla modal "Compartir Carpeta"-->
+
+    <!-- Pantalla modal para "Compartir Archivo"-->
+    <div class="modal fade" id="modalCompartirArchivo" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">COMPARTIR ARCHIVO</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+          <div>
+              <img id="logo" src="img/2.png"  style ="height:55px; width:85px;
+              margin-left: 41%;margin-right: 45%;" alt="MC">
+          </div>
+            <table class="table table-borderless">
+              <tbody>
+                <tr>
+                  <td><label>Archivo a compartir:</label></td>
+                  <td><select>
+                        <option value="0">Seleccionar archivo</option>
+                      </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td><label>Compartir con usuario:</label></td>
+                  <td><select>
+                        <option value="0">Seleccionar usuario</option>
+                      </select>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary">Compartir archivo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fin de pantalla modal "Compartir Archivo"-->
+
+    <!-- Pantalla modal para "Descargar Archivo"-->
+    <div class="modal fade" id="modalDescargarArchivo" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">DESCARGAR ARCHIVO</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+          <div>
+              <img id="logo" src="img/2.png"  style ="height:55px; width:85px;
+              margin-left: 41%;margin-right: 45%;" alt="MC">
+          </div>
+            <table class="table table-borderless">
+              <tbody>
+                <tr>
+                  <td><label>Archivo a descargar</label></td>
+                  <td><select>
+                        <option value="0">Seleccionar archivo</option>
+                      </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <pr>El archivo se descargará como un documento de
+                      texto (.txt) en su carpeta de descargas
+                    </pr>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary">Descargar archivo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fin de pantalla modal "Descargar Archivo"-->
 
     <!-- Pie de página -->
     <footer class="main-footer">
